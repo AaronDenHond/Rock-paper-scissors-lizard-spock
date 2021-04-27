@@ -1,7 +1,7 @@
 //personal choice
-let playerTarget = document.getElementById("playerChoice");
-let computerTarget = document.getElementById("computerChoice");
-let messageTarget = document.getElementById("message");
+let playerTarget = document.getElementById("playerChoice"); //extra divs to show under buttons instead of console logging
+let computerTarget = document.getElementById("computerChoice"); //extra
+let messageTarget = document.getElementById("message"); //extra 
 
 
 document.getElementById("rock").addEventListener("click", function () {
@@ -60,9 +60,9 @@ function compFunc() {
 
 // game logic
 //switch case rond player choice OF (OR?) computerchoice switch is al helft minder if elses om te checken
-let compare = function (playerChoice, computerChoice) {
-    playerTarget.innerHTML = "player picked " + playerChoice ;
-    computerTarget.innerHTML = "computer picked " + computerChoice ;
+let compare = function (playerChoice, computerChoice) {          
+    playerTarget.innerHTML = "player picked " + playerChoice ;             // extra assigning a value to the new created divs 
+    computerTarget.innerHTML = "computer picked " + computerChoice ; // extra
     
     switch (playerChoice) {
         case computerChoice:
