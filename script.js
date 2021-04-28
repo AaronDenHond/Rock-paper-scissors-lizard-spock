@@ -30,6 +30,14 @@ document.getElementById("spock").addEventListener("click", function () {
 
 });
 
+//reset button
+
+document.getElementById("reset").addEventListener("click", function () {
+    let playerChoice = document.getElementById("Rock", "Paper", "Scissors", "Lizards", "Spock");
+    reset(playerChoice, compFunc());
+    
+});
+
 
 // Computer makes random choice (0-1)
 
@@ -60,13 +68,14 @@ function compFunc() {
 
 // game logic
 //switch case rond player choice OF (OR?) computerchoice switch is al helft minder if elses om te checken
-let compare = function (playerChoice, computerChoice) {          
-    playerTarget.innerHTML = "player picked " + playerChoice ;             // extra assigning a value to the new created divs 
-    computerTarget.innerHTML = "computer picked " + computerChoice ; // extra
-    
+let compare = function (playerChoice, computerChoice) {
+    playerTarget.innerHTML = "Player picked " + playerChoice;             // extra assigning a value to the new created divs 
+    computerTarget.innerHTML = "Computer picked " + computerChoice; // extra
+
+
     switch (playerChoice) {
         case computerChoice:
-            
+
             messageTarget.innerHTML = "ITS A TIE!!!!!!"
 
             break;
@@ -125,8 +134,8 @@ let compare = function (playerChoice, computerChoice) {
                 messageTarget.innerHTML = "Player loses :(";
             }
             break;
-
-
+        case "Reset":
+            messageTarget.innerHTML = "Game is reset";
 
 
     }
@@ -136,6 +145,12 @@ let compare = function (playerChoice, computerChoice) {
     }*/
 }
 
+//reset
+document.getElementById("reset").addEventListener("click", function(){
+document.getElementById("playerChoice").innerHTML = " ";
+document.getElementById("computerChoice").innerHTML = " ";
+document.getElementById("message").innerHTML = " ";
 
+});
 
-
+//reset button doesnt work
