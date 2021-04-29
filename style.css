@@ -1,0 +1,24 @@
+body {
+    font-family: 'Leckerli One', cursive;
+    
+}
+
+
+
+h1 {
+    color: white;
+    border:1px solid red;
+    background-color: grey;
+}
+
+h3 {
+
+margin-top: 50%;
+display: block;
+
+}
+
+.playertext, .computertext, .messagetext {
+
+    font-size: 150%;
+}
