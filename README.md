@@ -11,3 +11,6 @@ to simulate the possible choices randomly for the computer.
 With a switch statement all possible combinations are sifted through
 and given correct text messages depending on outcome.
 
+# Site link
+
+https://aarondenhond.github.io/Rock-paper-scissors-lizard-spock/
